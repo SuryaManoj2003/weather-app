@@ -11,9 +11,9 @@ body {
 }
 
 .container {
-  width: 70%;
+  width: 40%;
   background: linear-gradient(180deg, #01fbff97, #1b49bc);
-  margin: 100px auto;
+  margin: 50px auto;
   text-align: center;
   border-radius: 20px;
   overflow: hidden;
@@ -117,6 +117,40 @@ body {
   margin-top: -10px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 50%;
+  }
+
+  .col > img {
+    margin-right: 10px;
+    width: 30px;
+  }
+
+  .humidity,
+  .wind {
+    font-size: 14px;
+    margin-top: -10px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .container {
+    width: 70%;
+  }
+
+  .col > img {
+    margin-right: 10px;
+    width: 30px;
+  }
+
+  .humidity,
+  .wind {
+    font-size: 14px;
+    margin-top: -10px;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .weather > img {
     width: 150px;
@@ -131,5 +165,16 @@ body {
 
   #search-bar {
     width: 90%;
+  }
+
+  .col > img {
+    margin-right: 10px;
+    width: 30px;
+  }
+
+  .humidity,
+  .wind {
+    font-size: 14px;
+    margin-top: -10px;
   }
 }
